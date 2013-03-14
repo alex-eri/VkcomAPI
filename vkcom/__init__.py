@@ -79,7 +79,6 @@ class OAuth(object):
         #        global scope,access_token, client_id ,user_id ,expires_in
 
             uri = request.get_uri()
-            print uri
             if uri.find('access_denied') > 1:
                 if not win.emit("delete-event", gtk.gdk.Event(gtk.gdk.DELETE)):
                     win.destroy()
@@ -94,9 +93,7 @@ class OAuth(object):
         bro.connect('resource-request-starting', resource_cb)
         win.run()
         win.destroy()
-        # win.connect('destroy', gtk.main_quit)
 
-        # gtk.main()
 
 
 class API(object):
