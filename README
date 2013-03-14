@@ -1,2 +1,10 @@
+VkcomAPI
+========
+
+ВКонтакте API
+
+Дополнительные модули
 python2-simplejson
 pywebkitgtk для авторизации через окошко с вебкит
+
+Пример смотри в save_photos_example.py
